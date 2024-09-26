@@ -1,0 +1,55 @@
+Questions Scenario:
+You want to create a program that asks a user the following questions:
+
+What is your name?
+How old are you?
+What is your favorite color?
+What is your favorite number?
+
+
+
+
+import java.util.Scanner;
+
+public class SimpleQuestionnaire {
+    public static void main(String[] args) {
+        // Create a Scanner object to take input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask for the user's name
+        System.out.print("What is your name? ");
+        String name = scanner.nextLine();
+
+        // Ask for the user's age
+        System.out.print("How old are you? ");
+        int age = scanner.nextInt();
+
+        // Ask for the user's favorite color
+        System.out.print("What is your favorite color? ");
+        String color = scanner.next();  // Using next() here since color is a single word
+
+        // Ask for the user's favorite number
+        System.out.print("What is your favorite number? ");
+        int favoriteNumber = scanner.nextInt();
+
+        // Display the user's answers
+        System.out.println("\nThank you, " + name + "! Here is what we know about you:");
+        System.out.println("Age: " + age);
+        System.out.println("Favorite Color: " + color);
+        System.out.println("Favorite Number: " + favoriteNumber);
+
+        // Close the scanner to prevent resource leaks
+        scanner.close();
+    }
+}
+
+
+What is your name? John
+How old are you? 25
+What is your favorite color? Blue
+What is your favorite number? 7
+
+Thank you, John! Here is what we know about you:
+Age: 25
+Favorite Color: Blue
+Favorite Number: 7
