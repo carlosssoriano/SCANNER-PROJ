@@ -25,7 +25,7 @@ public class Scanner1 {
         System.out.println("What is your favourite number? ");
         int favnumber = scanner.nextInt();
         
-        System.out.println("My name is " + name);
+        System.out.println("\nMy name is " + name);
         System.out.println("I am " + age);
         System.out.println("My favorite color is " + color);
         System.out.println("My favorite number is " + favnumber);
