@@ -1,0 +1,35 @@
+You want to create a program that asks a user the following questions:
+
+What is your name?
+How old are you?
+What is your favorite color?
+What is your favorite number?
+
+
+import java.util.Scanner;
+
+public class Scanner1 {
+    public static void main(String[] args) {
+ 
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("What is your name? ");
+        String name = scanner.nextLine();
+        
+        System.out.println("How old are you? ");
+        int age = scanner.nextInt();
+        
+        System.out.println("What is your favorite color? ");
+        String color = scanner.next();
+        
+        System.out.println("What is your favourite number? ");
+        int favnumber = scanner.nextInt();
+        
+        System.out.println("My name is " + name);
+        System.out.println("I am " + age);
+        System.out.println("My favorite color is " + color);
+        System.out.println("My favorite number is " + favnumber);
+        
+        scanner.close();
+    }
+}
