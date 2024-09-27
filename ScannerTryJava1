@@ -35,3 +35,5 @@ public class Scanner1 {
         scanner.close();
     }
 }
+
+//println pwede alisin yung ln para di nasa ilalim yung input
