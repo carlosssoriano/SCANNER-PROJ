@@ -11,6 +11,8 @@ import java.util.Scanner;
 public class Scanner1 {
     public static void main(String[] args) {
  
+       
+        // lowercase scanner is can be change
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("What is your name? ");
