@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class Main {
+	public static void main(String[] args) {
+	
+	    Scanner scanner = new Scanner(System.in);
+	    
+	    System.out.print("Enter Fahrenheit: ");
+	    double fahrenheit = scanner.nextDouble(); 
+	    
+	    double celsius = ((fahrenheit - 32) * 5) / 9;
+	    
+	    System.out.print("Temperature in Celsius: " + celsius);
+	    
+	    scanner.close();
+	    
+	}
+}
+
+// Output: the formula is: Celsius = ((Fahrenheit-32)*5)/9  
+//ENTER Fahrenheit: 54
+//Temperature in Celsius is: 12.22222
