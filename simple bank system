@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
 		
-		double balance = 500;
+	    double balance = 500;
 		
 	    System.out.println("Banking");
 	    System.out.println("1. Deposit");
