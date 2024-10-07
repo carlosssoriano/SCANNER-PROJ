@@ -1,0 +1,35 @@
+// Write a simple number guessing game where the program chooses a random number between 1 and 100, 
+and the user has to guess it. The program should tell the user if their guess is too low, too high, 
+or correct.
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter your guess: ");
+		int inputguess = sc.nextInt();
+		
+		if (inputguess == 26) {
+		    System.out.print("You are correct!");
+		}
+		
+		if (inputguess <= 25) {
+		    System.out.print("Nice try!");
+		}
+		
+		if (inputguess >= 27) {
+		    System.out.print("Nice try!");
+		}
+		
+		
+		
+		sc.close();
+		
+	}
+}
