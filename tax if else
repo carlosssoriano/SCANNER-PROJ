@@ -1,0 +1,29 @@
+//Create a java program that will accept the gross salary and print the net salary.  Assume 10% tax will be deducted if the gross salary is greater than 10,000, else 5%.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter Gross Salary: ");
+        int gross = sc.nextInt();
+        
+        double fivepercent = (gross*0.95);
+        double tenpercent = (gross*0.90);
+        
+        if (gross >= 10000) {
+            System.out.print("10% tax is deducted: " + tenpercent);
+            
+        }
+        
+        if (gross <= 9999) {
+            System.out.print("5% tax is deducted: " + fivepercent);
+        }
+        
+        sc.close();
+        
+        
+    }
+}
