@@ -1,0 +1,26 @@
+// Build a program that will input two integer variables, A and B and exchange their values
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter A: ");
+        int A = sc.nextInt();
+        
+        System.out.print("Enter B: ");
+        int B = sc.nextInt();
+        
+        System.out.println("Original value of A: " + A);
+        System.out.print("Original value of B: " + B);
+        
+        System.out.println("\nExchanged value of A: " + B);
+        System.out.print("Exchanged value of B: " + A);
+
+        sc.close();
+        
+        
+    }
+}
