@@ -1,0 +1,38 @@
+Construct a program in JAVA language that will input that a character (“I”, “N”, or “F”). 
+Do the following output respect to the input.
+Character "I", "N", "F" / I - GoodMorning, N- Goodafternoon, F- Goodevening.
+
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("CHOOSE WITHIN I,N,F: ");
+		char letter = sc.next().charAt(0);
+		
+		
+		
+		if (letter == 'I') {
+		    System.out.print("Good Morning");
+		}
+		
+		else if (letter == 'N') {
+		    System.out.print("Good Afternoon");
+		}
+		
+		else if (letter == 'F') {
+		    System.out.print("Good Evening");
+		}
+		
+		else {
+		    System.out.print("Invalid");
+		}
+		
+		sc.close();
+	}
+}	
+		
+		
